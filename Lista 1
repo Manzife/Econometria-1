@@ -1,0 +1,34 @@
+---
+title: "Lista 1"
+author: "Felipe Manzi"
+date: "28/04/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Questão 2
+```{r message=FALSE, warning=FALSE}
+library("tidyverse")
+library("xtable")
+```
+
+Questão 3
+```{r}
+bikes <- read.csv("C:\\Users\\usuario\\Downloads\\bikes.csv")
+view(bikes)
+```
+
+A base tem 9 variáveis. São 11 colunas mas 2 são date e day (ou seja, contém a mesma a informação), a outra é o index.
+São 210 linhas ou observações.
+
+
+Questão 4
+```{r}
+summary(bikes)
+```
+i)A maxima temperatura foi 81.00 a mínima 26.10
+ii) A ponte com a maior média de ciclista foi a Williamsburg Bridge, com a média de 4862
